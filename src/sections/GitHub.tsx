@@ -77,10 +77,11 @@ export default function GitHub() {
               className="p-6 md:p-8 rounded-2xl bg-[#1E1E1E] border border-white/5 shadow-xl"
             >
               <img
-                src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubStatsData.username}&layout=compact&theme=dark&bg_color=0D0D0D&border_color=ffffff0d&text_color=e3e2e2&title_color=FF2D20`}
+                src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubStatsData.username}&layout=compact&theme=dark&hide_border=true&bg_color=1E1E1E&title_color=FFFFFF&text_color=A1A1AA&langs_count=6`}
                 alt={`${githubStatsData.username}'s top languages`}
-                className="w-full rounded-xl border border-white/5"
+                className="w-full rounded-xl"
                 loading="lazy"
+                referrerPolicy="no-referrer"
               />
             </motion.div>
 
