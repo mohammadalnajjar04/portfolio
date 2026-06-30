@@ -76,13 +76,20 @@ export default function GitHub() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="p-6 md:p-8 rounded-2xl bg-[#1E1E1E] border border-white/5 shadow-xl"
             >
-              <img
-                src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${githubStatsData.username}&layout=compact&theme=dark&hide_border=true&bg_color=1E1E1E&title_color=FFFFFF&text_color=A1A1AA&langs_count=6`}
-                alt={`${githubStatsData.username}'s top languages`}
-                className="w-full rounded-xl"
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
+              <h4 className="font-sans font-bold text-white text-base uppercase tracking-wider mb-6">
+                Main Technologies
+              </h4>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {["PHP", "JavaScript", "TypeScript", "Oracle SQL", "MySQL", "React"].map((tech) => (
+                  <div
+                    key={tech}
+                    className="rounded-xl bg-black/40 border border-white/5 px-4 py-3 text-center text-sm text-zinc-300 hover:border-primary/30 hover:text-white transition-all duration-300"
+                  >
+                    {tech}
+                  </div>
+                ))}
+              </div>
             </motion.div>
 
             {/* Featured Repositories */}
