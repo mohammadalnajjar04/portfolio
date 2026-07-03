@@ -138,7 +138,9 @@ export default function Hero() {
           </a>
 
           <a
-            href="/resume.pdf"
+            href="/Mohammad_Alnajjar_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 rounded-xl border border-primary/20 hover:border-primary/40 bg-primary/5 hover:bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2"
             aria-label="Download resume (PDF)"
           >
