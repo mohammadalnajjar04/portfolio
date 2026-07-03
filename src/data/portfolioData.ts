@@ -44,7 +44,7 @@ export const personalInfo = {
   location: "Irbid, Jordan",
   education: "B.Sc. Computer Science – Jadara University",
   role: "Software Engineer",
-    resumeUrl: "/portfolio/Mohammad_Alnajjar_CV.pdf",
+    resumeUrl: `${import.meta.env.BASE_URL}Mohammad_Alnajjar_CV.pdf`,
   focus: ["Full-Stack Development", "Mobile Development", "Database Systems", "Oracle Technologies"],
   github: "https://github.com/mohammadalnajjar04",
   linkedin: "https://www.linkedin.com/in/mohammad-alnajjar04",
