@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Award, Clock, ArrowUpRight, Lock } from "lucide-react";
+import { Award, Clock, ArrowUpRight, Lock, CheckCircle } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
 import { certificatesData } from "../data/portfolioData";
 
@@ -14,8 +14,8 @@ export default function Certificates() {
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <SectionHeader
           number="05 // CERTIFICATES"
-          title="Certificates"
-          subtitle="Professional certifications I am currently working toward."
+          title="Certificates & Achievements"
+          subtitle="Professional certifications, training completions, and hackathon participation."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -37,10 +37,17 @@ export default function Certificates() {
                   <div className="p-2.5 rounded-lg bg-white/5 text-primary group-hover:bg-primary/5 transition-all">
                     <Award className="w-5 h-5" />
                   </div>
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-amber-950/20 text-amber-400 border border-amber-900/30 text-[10px] font-mono uppercase font-bold tracking-wider">
-                    <Clock className="w-3 h-3 text-amber-400" />
-                    <span>Planned</span>
-                  </div>
+                  {cert.status === "completed" ? (
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-950/20 text-emerald-400 border border-emerald-900/30 text-[10px] font-mono uppercase font-bold tracking-wider">
+                      <CheckCircle className="w-3 h-3 text-emerald-400" />
+                      <span>Completed</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-amber-950/20 text-amber-400 border border-amber-900/30 text-[10px] font-mono uppercase font-bold tracking-wider">
+                      <Clock className="w-3 h-3 text-amber-400" />
+                      <span>Planned</span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Title */}
@@ -52,9 +59,13 @@ export default function Certificates() {
               </div>
 
               <div className="pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-zinc-600 mt-auto">
-                <span className="uppercase tracking-wider">Not yet completed</span>
+                <span className="uppercase tracking-wider">{cert.date}</span>
                 <span className="flex items-center gap-1">
-                  <Lock className="w-3 h-3" /> Planned
+                  {cert.status === "completed" ? (
+                    <><CheckCircle className="w-3 h-3" /> Verified</>
+                  ) : (
+                    <><Lock className="w-3 h-3" /> Planned</>
+                  )}
                 </span>
               </div>
             </motion.div>

@@ -25,7 +25,7 @@ export default function Skills() {
 
         <div className="mt-12 p-6 rounded-2xl bg-[#1E1E1E]/40 border border-white/5 text-center max-w-2xl mx-auto">
           <p className="font-mono text-[11px] text-zinc-500 uppercase tracking-widest leading-relaxed">
-            Mobile development (Flutter, Dart) and enterprise tools (Oracle APEX) are currently in progress.
+            AI-assisted development tools (Cursor, Copilot, MCP Servers) and languages (Arabic, English) are also part of my toolkit.
           </p>
         </div>
       </div>

@@ -40,16 +40,17 @@ export interface Certificate {
 }
 
 export const personalInfo = {
-  name: "Mohammad Alnajjar",
+  name: "Mohammad Al-Najjar",
   location: "Irbid, Jordan",
   education: "B.Sc. Computer Science – Jadara University",
-  role: "Software Engineer",
-    resumeUrl: `${import.meta.env.BASE_URL}Mohammad_Alnajjar_CV.pdf`,
+  role: "Full-Stack Developer & Software Engineer",
+  resumeUrl: `${import.meta.env.BASE_URL}Mohammad_Alnajjar_CV.pdf`,
   focus: ["Full-Stack Development", "Mobile Development", "Database Systems", "Oracle Technologies"],
   github: "https://github.com/mohammadalnajjar04",
   linkedin: "https://www.linkedin.com/in/mohammad-alnajjar04",
   email: "alnajjarmohammad00@gmail.com",
-  bio: "I am a Computer Science graduate with experience building full-stack web applications and working with relational databases. I enjoy designing clean, maintainable systems — from backend APIs and database schemas to responsive frontend interfaces. I'm particularly interested in Oracle technologies and data-driven application development.",
+  phone: "+962797169202",
+  bio: "Computer Science graduate with experience in full-stack development, database systems, and Oracle technologies. I build clean, functional applications that solve real problems.",
   objective: "To contribute to engineering teams building practical, well-architected software, while continuing to grow my skills in full-stack development and database systems."
 };
 
@@ -59,28 +60,19 @@ export const skillsData: SkillGroup[] = [
     skills: [
       { name: "C" },
       { name: "C++" },
-      { name: "Java" },
       { name: "C#" },
+      { name: "Java" },
+      { name: "Python" },
       { name: "JavaScript" },
-      { name: "TypeScript" },
       { name: "PHP" }
     ]
   },
   {
-    category: "Frontend",
+    category: "Web & Frontend",
     skills: [
-      { name: "HTML" },
-      { name: "CSS" },
-      { name: "React" },
-      { name: "Tailwind CSS" }
-    ]
-  },
-  {
-    category: "Backend",
-    skills: [
-      { name: "PHP" },
-      { name: "Node.js" },
-      { name: "Express.js" }
+      { name: "HTML5" },
+      { name: "CSS3" },
+      { name: "JavaScript (ES6+)" }
     ]
   },
   {
@@ -88,54 +80,77 @@ export const skillsData: SkillGroup[] = [
     skills: [
       { name: "Oracle SQL" },
       { name: "PL/SQL" },
-      { name: "MySQL" }
+      { name: "MySQL" },
+      { name: "PostgreSQL" },
+      { name: "SQL Server" },
+      { name: "Database Design" }
     ]
   },
   {
-    category: "Tools",
+    category: "Mobile Development",
+    skills: [
+      { name: "Android Studio" },
+      { name: "Java" },
+      { name: "XML" },
+      { name: "SQLite" }
+    ]
+  },
+  {
+    category: "Fundamentals",
+    skills: [
+      { name: "OOP" },
+      { name: "Data Structures" },
+      { name: "Algorithms" },
+      { name: "SDLC" },
+      { name: "Problem Solving" }
+    ]
+  },
+  {
+    category: "Tools & Version Control",
     skills: [
       { name: "Git" },
       { name: "GitHub" },
       { name: "VS Code" },
-      { name: "Linux" }
+      { name: "SQL Developer" }
     ]
   },
   {
-    category: "Currently Learning",
+    category: "AI-Assisted Development",
     skills: [
-      { name: "Oracle APEX" },
-      { name: "Cloud Computing" },
-      { name: "Cybersecurity" }
+      { name: "MCP Servers" },
+      { name: "Cursor" },
+      { name: "GitHub Copilot" },
+      { name: "Vibe Coding" },
+      { name: "ChatGPT / Claude" }
     ]
   },
   {
-    category: "Mobile Learning",
+    category: "Languages",
     skills: [
-      { name: "Flutter", level: "Learning" },
-      { name: "Dart", level: "Learning" },
-      { name: "Android Studio", level: "Learning" }
+      { name: "Arabic", level: "Native" },
+      { name: "English", level: "Professional" }
     ]
   }
 ];
 
 export const projectsData: Project[] = [
   {
-    id: "restaurant-reservation",
-    title: "Restaurant Reservation System",
-    type: "Personal Project",
-    status: "private",
-    description: "A restaurant reservation platform with menu browsing, online table booking, responsive UI, and an admin dashboard.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "Database"],
-    badge: "Private Repository"
+    id: "agri-supply-chain",
+    title: "AI-Based Agricultural Supply Chain Web Application",
+    type: "Graduation Project / Capstone",
+    status: "graduation",
+    description: "Built a centralized web application to streamline interactions between farmers, transporters, and distributors. Designed dynamic user dashboards, secure authentication workflows, and structured relational database schemas. Integrated AI-assisted decision-support modules for price prediction and logistics optimization.",
+    technologies: ["PHP", "JavaScript", "HTML5", "CSS3", "SQL", "MySQL", "AI Algorithms"],
+    badge: "Capstone Project - 2026"
   },
   {
-    id: "agri-supply-chain",
-    title: "Agricultural Supply Chain Management System",
-    type: "Graduation Project",
-    status: "graduation",
-    description: "A platform connecting farmers, transporters, and store owners with AI-assisted decision support and real-time coordination.",
-    technologies: ["PHP", "MySQL", "Web Development", "Database Design"],
-    badge: "Graduation Project"
+    id: "customer-service-mobile",
+    title: "Customer Service Mobile Application",
+    type: "Field Training Project - IDECO",
+    status: "private",
+    description: "Designed and built Android UI components (using XML & Java) and integrated SQLite for offline data storage and localized synchronization to handle customer inquiry modules.",
+    technologies: ["Android Studio", "Java", "XML", "SQLite"],
+    badge: "Field Training - 2026"
   },
   {
     id: "portfolio",
@@ -146,83 +161,92 @@ export const projectsData: Project[] = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Motion"],
     githubUrl: "https://github.com/mohammadalnajjar04/portfolio",
     badge: "Active"
-  },
-  {
-    id: "oracle-journey",
-    title: "Oracle SQL / PL-SQL Practice",
-    type: "Learning Repository",
-    status: "private",
-    description: "Personal repository documenting Oracle SQL, PL/SQL, and Oracle APEX practice with exercises and database concepts.",
-    technologies: ["Oracle SQL", "PL/SQL", "Oracle APEX"],
-    badge: "Private Repository"
-  },
-  {
-    id: "mobile-learning",
-    title: "Mobile Development Learning",
-    type: "Learning",
-    status: "learning",
-    description: "Currently learning Flutter, Dart, and Android Studio to build mobile applications.",
-    technologies: ["Flutter", "Dart", "Android Studio"],
-    badge: "In Progress"
   }
 ];
 
 export const experienceData: Experience[] = [
   {
-    id: "dalil-training",
-    title: "Full Stack Training Program",
-    organization: "Dalil Group",
-    period: "Ongoing",
-    description: "Training in end-to-end web development, API integration, and production-level application architecture.",
-    tags: ["Full-Stack", "API Development", "Web Development"]
+    id: "daleel-training",
+    title: "Full-Stack Developer Trainee",
+    organization: "Daleel Academy - Jordan",
+    period: "07/2026 - Present",
+    description: "Enrolled in an intensive hybrid training program focused on full-stack web application development and modern engineering practices. Developing functional web applications, connecting responsive front-end interfaces with server-side logic and relational databases. Applying clean code principles, OOP patterns, and Git version control in collaborative team environments.",
+    tags: ["HTML5", "CSS3", "JavaScript", "PHP", "C#", "SQL Server", "PostgreSQL", "Git"]
+  },
+  {
+    id: "ideco-training",
+    title: "Field Training Intern",
+    organization: "Irbid District Electricity Company (IDECO) - Jordan",
+    period: "02/2026 - 05/2026",
+    description: "Assisted in designing and developing a customer service mobile application within a real-world enterprise infrastructure. Collaborated with supervisors and technical teams while applying practical software engineering concepts. Enhanced skills in mobile development, troubleshooting, database integration, and corporate communication.",
+    tags: ["Android Studio", "Java", "XML", "SQLite"]
   },
   {
     id: "bsc-degree",
     title: "B.Sc. Computer Science",
-    organization: "Jadara University",
-    period: "Graduated",
-    description: "Studied algorithms, object-oriented design, relational databases, and software engineering fundamentals.",
-    tags: ["Algorithms", "Object-Oriented Design", "Databases"]
-  },
-  {
-    id: "oracle-sql-path",
-    title: "Oracle SQL / PL-SQL Self-Study",
-    organization: "Independent Learning",
-    period: "Ongoing",
-    description: "Self-directed practice with Oracle SQL, PL/SQL, relational schemas, stored procedures, and query optimization.",
-    tags: ["Oracle DB", "PL/SQL", "Database Design"]
-  },
-  {
-    id: "portfolio-building",
-    title: "Personal Project Development",
-    organization: "Independent",
-    period: "Ongoing",
-    description: "Building portfolio projects and open-source work to deepen skills in full-stack development and software design.",
-    tags: ["React", "Node.js", "Full-Stack"]
+    organization: "Jadara University - Irbid, Jordan",
+    period: "2022 - 2026",
+    description: "Grade: Excellent GPA (86/100). Core Competencies: Software Engineering, Object-Oriented Programming, Data Structures, Algorithms, Relational Databases, Web Development, Networks, and Operating Systems.",
+    tags: ["Software Engineering", "OOP", "Data Structures", "Algorithms", "Databases"]
   }
 ];
 
 export const certificatesData: Certificate[] = [
   {
-    id: "cert-oracle-sql",
-    title: "Oracle Database SQL Specialist",
-    issuer: "Oracle Academy",
-    date: "Planned",
-    status: "coming_soon"
+    id: "claude-code-101",
+    title: "Claude Code 101",
+    issuer: "Anthropic",
+    date: "2026",
+    status: "completed"
   },
   {
-    id: "cert-fullstack",
-    title: "Full-Stack Developer",
-    issuer: "Dalil Training Program",
-    date: "Planned",
-    status: "coming_soon"
+    id: "claude-101",
+    title: "Claude 101",
+    issuer: "Anthropic",
+    date: "2026",
+    status: "completed"
   },
   {
-    id: "cert-cybersecurity",
-    title: "Cybersecurity & Network Defense",
-    issuer: "Planned Certification Path",
-    date: "Planned",
-    status: "coming_soon"
+    id: "pcep-python",
+    title: "PCEP – Certified Entry-Level Python Programmer",
+    issuer: "Python Institute",
+    date: "2026",
+    status: "completed"
+  },
+  {
+    id: "python-essentials-1",
+    title: "Python Essentials 1",
+    issuer: "Cisco Networking Academy",
+    date: "2026",
+    status: "completed"
+  },
+  {
+    id: "ieee-ai-hackathon",
+    title: "IEEE Jordan AI Modeling Hackathon 1.0 Participant",
+    issuer: "IEEE",
+    date: "2025",
+    status: "completed"
+  },
+  {
+    id: "web-dev-training",
+    title: "Web Development Training (36 Hours)",
+    issuer: "Jadara University",
+    date: "2024",
+    status: "completed"
+  },
+  {
+    id: "infosec-linux",
+    title: "InfoSec & Linux Fundamentals (40 Hours)",
+    issuer: "DevSec Academy",
+    date: "2024",
+    status: "completed"
+  },
+  {
+    id: "droidcon-amman",
+    title: "Droidcon Amman Conference & Hackathon Attendee",
+    issuer: "Droidcon",
+    date: "2024",
+    status: "completed"
   }
 ];
 
@@ -231,23 +255,16 @@ export const githubStatsData = {
   profileUrl: "https://github.com/mohammadalnajjar04",
   featuredRepos: [
     {
-      name: "restaurant-reservation",
-      description: "Restaurant reservation system built during full-stack training.",
-      language: "TypeScript",
-      stars: 0,
-      forks: 0
-    },
-    {
       name: "agri-supply-chain",
-      description: "Graduation project for agricultural supply chain management.",
+      description: "AI-Based Agricultural Supply Chain Web Application — graduation capstone project.",
       language: "PHP",
       stars: 0,
       forks: 0
     },
     {
-      name: "oracle-plsql-practice",
-      description: "Practice repository for Oracle SQL and PL/SQL development.",
-      language: "PL/SQL",
+      name: "portfolio",
+      description: "Personal portfolio website built with React, TypeScript, and Tailwind CSS.",
+      language: "TypeScript",
       stars: 0,
       forks: 0
     }

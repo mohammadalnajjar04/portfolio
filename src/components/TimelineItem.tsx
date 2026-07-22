@@ -15,7 +15,8 @@ interface TimelineItemProps {
 export default function TimelineItem({ item, index }: TimelineItemProps) {
   // Determine relevant icon for timeline item
   const getTimelineIcon = (id: string) => {
-    if (id.includes("dalil")) return <Briefcase className="w-5 h-5 text-primary" />;
+    if (id.includes("daleel")) return <Briefcase className="w-5 h-5 text-primary" />;
+    if (id.includes("ideco")) return <Briefcase className="w-5 h-5 text-primary" />;
     if (id.includes("bsc") || id.includes("degree")) return <GraduationCap className="w-5 h-5 text-primary" />;
     if (id.includes("oracle")) return <Code2 className="w-5 h-5 text-primary" />;
     return <Award className="w-5 h-5 text-primary" />;

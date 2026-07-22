@@ -153,17 +153,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 Project Details
               </div>
               <p className="leading-relaxed">
-                {project.id === "restaurant-reservation" && (
-                  "Built with React and Node.js. Features include table reservation management, menu browsing, and an admin panel for restaurant staff."
-                )}
                 {project.id === "agri-supply-chain" && (
-                  "Developed with PHP and MySQL. Connects farmers, transporters, and store owners with AI-assisted decision support for supply chain coordination."
+                  "Built with PHP, JavaScript, HTML5, CSS3, and MySQL. Features AI-assisted decision-support modules for price prediction and logistics optimization, dynamic dashboards, and secure authentication."
                 )}
-                {project.id === "oracle-journey" && (
-                  "Practice repository covering Oracle SQL, PL/SQL packages, stored procedures, triggers, and relational database design concepts."
-                )}
-                {project.id === "mobile-learning" && (
-                  "Learning Flutter and Dart for cross-platform mobile development. Exploring state management, async programming, and responsive UI patterns."
+                {project.id === "customer-service-mobile" && (
+                  "Built with Android Studio, Java, and XML. Includes custom UI components for customer inquiry modules, SQLite offline data storage, and localized synchronization."
                 )}
               </p>
             </div>

@@ -10,10 +10,10 @@ import { personalInfo } from "../data/portfolioData";
 
 export default function Hero() {
   const titles = [
-    "Computer Science Graduate",
-    "Software Engineer",
     "Full-Stack Developer",
-    "Oracle SQL Developer"
+    "Software Engineer",
+    "Computer Science Graduate",
+    "Database Specialist"
   ];
 
   const [titleIndex, setTitleIndex] = useState(0);

@@ -38,7 +38,7 @@ export default function GitHub() {
               <div className="space-y-2">
                 <h4 className="font-sans font-bold text-white text-xl">@{githubStatsData.username}</h4>
                 <p className="text-sm text-zinc-400 font-mono">
-                  Software Engineer
+                  Full-Stack Developer & Software Engineer
                 </p>
               </div>
 
@@ -81,7 +81,7 @@ export default function GitHub() {
               </h4>
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {["PHP", "JavaScript", "TypeScript", "Oracle SQL", "MySQL", "React"].map((tech) => (
+                {["PHP", "JavaScript", "Java", "Oracle SQL", "MySQL", "Python"].map((tech) => (
                   <div
                     key={tech}
                     className="rounded-xl bg-black/40 border border-white/5 px-4 py-3 text-center text-sm text-zinc-300 hover:border-primary/30 hover:text-white transition-all duration-300"

@@ -41,7 +41,7 @@ export default function About() {
               {personalInfo.bio}
             </p>
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
-              My computer science background taught me to approach problems methodically and write code that is maintainable and well-structured. I enjoy working across the full stack — from designing database schemas to building responsive user interfaces.
+              My computer science background taught me to approach problems methodically and write code that is maintainable and well-structured. I enjoy working across the full stack — from designing database schemas to building responsive user interfaces. I'm currently focused on full-stack web development through Daleel Academy's intensive training program.
             </p>
           </motion.div>
 

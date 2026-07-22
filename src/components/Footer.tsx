@@ -20,10 +20,10 @@ export default function Footer() {
         {/* Brand Meta */}
         <div className="text-center md:text-left space-y-2">
           <div className="font-sans font-extrabold text-white text-lg tracking-tighter uppercase">
-            MOHAMMAD ALNAJJAR
+            MOHAMMAD AL-NAJJAR
           </div>
           <p className="text-xs text-zinc-500 font-mono">
-            Software Engineer &amp; Computer Science Graduate.
+            {personalInfo.role}.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
 
           <p className="text-xs text-zinc-600 font-mono leading-relaxed">
-            © {new Date().getFullYear()} Mohammad Alnajjar. Built with React, TypeScript, and Tailwind CSS.
+            © {new Date().getFullYear()} Mohammad Al-Najjar. Built with React, TypeScript, and Tailwind CSS.
           </p>
         </div>
       </div>

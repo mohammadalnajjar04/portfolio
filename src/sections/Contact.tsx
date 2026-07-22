@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Mail, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Phone } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
 import ContactForm from "../components/ContactForm";
 import { personalInfo } from "../data/portfolioData";
@@ -17,6 +17,13 @@ export default function Contact() {
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
       icon: <Mail className="w-5 h-5 text-primary" />
+    },
+    {
+      id: "phone",
+      label: "Phone",
+      value: personalInfo.phone,
+      href: `tel:${personalInfo.phone}`,
+      icon: <Phone className="w-5 h-5 text-primary" />
     },
     {
       id: "linkedin",
@@ -89,7 +96,7 @@ export default function Contact() {
                       {detail.href ? (
                         <a
                           href={detail.href}
-                          target={detail.id !== "email" ? "_blank" : undefined}
+                          target={detail.id !== "email" && detail.id !== "phone" ? "_blank" : undefined}
                           rel="noreferrer"
                           className="text-sm md:text-base font-bold text-white hover:text-primary transition-colors font-mono"
                         >
